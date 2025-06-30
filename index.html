@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Împreună pentru Gabriel</title>
+  <title>Together for Gabriel</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -41,35 +41,40 @@
   <div class="container">
     <img src="campaign_image_resized.jpg" alt="Gabriel Florin Dobre">
 
-    <p>Gabriel Florin Dobre are doar 20 de ani. La vârsta la care ar trebui să meargă la facultate, să-și facă planuri pentru viitor și să se bucure de fiecare zi, el luptă pentru viața lui. A fost diagnosticat cu leucemie acută, o formă agresivă de cancer al sângelui.</p>
+    <p>Gabriel Florin Dobre is only 20 years old. At an age when he should be going to university, making plans for the future, and enjoying every day, he is fighting for his life. He was diagnosed with acute leukemia, an aggressive form of blood cancer.</p>
 
-    <p>Boala a venit pe neașteptate. În doar câteva săptămâni, Gabriel a trecut de la o viață normală la saloanele reci ale spitalului Fundeni. A început o primă cură de chimioterapie dură, pe care a dus-o cu o tărie impresionantă. Este la a doua cură, mai complexă.</p>
+    <p>The disease came suddenly. In just a few weeks, Gabriel went from living a normal life to the cold hospital rooms of Fundeni. He began a first round of harsh chemotherapy, which he endured with impressive strength. He is now undergoing a second, more complex round.</p>
 
-    <p>Medicii au fost sinceri: spunând ca șansa lui de vindecare mai rapidă cu rezultate pozitive este un transplant de celule stem, într-o clinică specializată din Milano. Costul tratamentului, intervenției și perioadei post-operatorii ajunge la 250.000 de euro. Este o sumă... dar nu imposibil de strâns, de aceea apelăm la ajutorul vostru.</p>
+    <p>Doctors have been honest: his best chance for faster recovery with positive results is a stem cell transplant in a specialized clinic in Milan. The cost of the treatment, procedure, and post-operative care reaches €250,000. It's a large sum... but not impossible to raise, which is why we ask for your help.</p>
 
-    <p>Fiecare donație înseamnă o zi câștigată. Fiecare distribuire îl poate aduce mai aproape de salvare. Nu lăsa ca timpul să treacă fără să faci ceva. El are nevoie de noi acum.</p>
+    <p>Every donation means another day won. Every share can bring him closer to salvation. Don’t let time pass without doing something. He needs us now.</p>
 
-    <p style="color:red;">🔴 Hai să-i fim SPERANȚĂ. Să-l ajutăm să aibă o viață sănătoasă.</p>
+    <p style="color:red;">🔴 Let’s be his HOPE. Help him live a healthy life.</p>
 
-    <h3>📍Beneficiar: Gabriel Florin Dobre</h3>
+    <h3>📍Beneficiary: Gabriel Florin Dobre</h3>
 
     <p><strong>IBAN ING:</strong> <span id="iban-ing">RO15INGB0000999915310830</span></p>
     <p><strong>BIC (SWIFT ING):</strong> INGBROBUXXX</p>
-    <button class="btn-copy" onclick="copyIBAN('iban-ing')">📋 Copiază IBAN ING</button>
+    <button class="btn-copy" onclick="copyIBAN('iban-ing')">📋 Copy ING IBAN</button>
 
     <p><strong>IBAN Revolut (EURO/LEI):</strong> <span id="iban-revolut">RO07REVO0000101213085502</span></p>
     <p><strong>BIC/SWIFT Revolut:</strong> REVOROBB</p>
-    <button class="btn-copy" onclick="copyIBAN('iban-revolut')">📋 Copiază IBAN Revolut</button>
+    <button class="btn-copy" onclick="copyIBAN('iban-revolut')">📋 Copy Revolut IBAN</button>
+
     <p><strong>IBAN (USD):</strong> <span id="iban-usd">RO24INGB0000999917872729</span></p>
-<p><strong>BIC/SWIFT (USD):</strong> INGBROBU</p>
-<p><strong>Banca:</strong> INGB CENTRALA</p>
-<button class="btn-copy" onclick="copyIBAN('iban-usd')">📋 Copiază IBAN USD</button>
-  <p><strong>Detalii plată:</strong> " Donație transplant "</p>
-    <p><strong>Adresa:</strong> Str. Orizontului, nr. 4, ap. 8, Sanpetru, Brașov, România</p>
-    <p>#SalveazaViataLuiGabriel #DonatiiPentruGabriel #LuptaCuLeucemia #GabrielAreNevoieDeNoi #SansaLaViata</p>
- <div id="copiat" class="copiat">✅ IBAN copiat!</div>
+    <p><strong>BIC/SWIFT (USD):</strong> INGBROBU</p>
+    <p><strong>Bank:</strong> INGB CENTRAL</p>
+    <button class="btn-copy" onclick="copyIBAN('iban-usd')">📋 Copy USD IBAN</button>
+
+    <p><strong>Payment details:</strong> "Donation transplant"</p>
+    <p><strong>Address:</strong> Str. Orizontului, no. 4, apt. 8, Sanpetru, Brașov, Romania</p>
+
+    <p>#SaveGabriel #DonationsForGabriel #FightLeukemia #GabrielNeedsUs #HopeForLife</p>
+
+    <div id="copiat" class="copiat">✅ IBAN copied!</div>
   </div>
- <script>
+
+  <script>
     function copyIBAN(id) {
       const iban = document.getElementById(id).textContent;
       navigator.clipboard.writeText(iban).then(function () {
@@ -78,7 +83,7 @@
           document.getElementById('copiat').style.display = 'none';
         }, 2000);
       }, function () {
-        alert("Nu s-a putut copia. Te rugăm copiază manual: " + iban);
+        alert("Could not copy. Please copy manually: " + iban);
       });
     }
   </script>
