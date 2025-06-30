@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Împreună pentru Gabriel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .btn-copy {
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px 0;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .copiat {
+      color: green;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="campaign_image_resized.jpg" alt="Gabriel Florin Dobre">
+
+    <p>Gabriel Florin Dobre are doar 20 de ani. La vârsta la care ar trebui să meargă la facultate, să-și facă planuri pentru viitor și să se bucure de fiecare zi, el luptă pentru viața lui. A fost diagnosticat cu leucemie acută, o formă agresivă de cancer al sângelui.</p>
+
+    <p>Boala a venit pe neașteptate. În doar câteva săptămâni, Gabriel a trecut de la o viață normală la saloanele reci ale spitalului Fundeni. A început o primă cură de chimioterapie dură, pe care a dus-o cu o tărie impresionantă. Este la a doua cură, mai complexă.</p>
+
+    <p>Medicii au fost sinceri: spunând ca șansa lui de vindecare mai rapidă cu rezultate pozitive este un transplant de celule stem, într-o clinică specializată din Milano. Costul tratamentului, intervenției și perioadei post-operatorii ajunge la 250.000 de euro. Este o sumă... dar nu imposibil de strâns, de aceea apelăm la ajutorul vostru.</p>
+
+    <p>Fiecare donație înseamnă o zi câștigată. Fiecare distribuire îl poate aduce mai aproape de salvare. Nu lăsa ca timpul să treacă fără să faci ceva. El are nevoie de noi acum.</p>
+
+    <p style="color:red;">🔴 Hai să-i fim SPERANȚĂ. Să-l ajutăm să aibă o viață sănătoasă.</p>
+
+    <h3>📍Beneficiar: Gabriel Florin Dobre</h3>
+
+    <p><strong>IBAN ING:</strong> <span id="iban-ing">RO15INGB0000999915310830</span></p>
+    <p><strong>BIC (SWIFT ING):</strong> INGBROBUXXX</p>
+    <button class="btn-copy" onclick="copyIBAN('iban-ing')">📋 Copiază IBAN ING</button>
+
+    <p><strong>IBAN Revolut (EURO/LEI):</strong> <span id="iban-revolut">RO07REVO0000101213085502</span></p>
+    <p><strong>BIC/SWIFT Revolut:</strong> REVOROBB</p>
+    <button class="btn-copy" onclick="copyIBAN('iban-revolut')">📋 Copiază IBAN Revolut</button>
+    <p><strong>IBAN (USD):</strong> <span id="iban-usd">RO24INGB0000999917872729</span></p>
+<p><strong>BIC/SWIFT (USD):</strong> INGBROBU</p>
+<p><strong>Banca:</strong> INGB CENTRALA</p>
+<button class="btn-copy" onclick="copyIBAN('iban-usd')">📋 Copiază IBAN USD</button>
+  <p><strong>Detalii plată:</strong> " Donație transplant "</p>
+
+    <p>#SalveazaViataLuiGabriel #DonatiiPentruGabriel #LuptaCuLeucemia #GabrielAreNevoieDeNoi #SansaLaViata</p>
+
+    <div id="copiat" class="copiat">✅ IBAN copiat!</div>
+  </div>
+
+  <script>
+    function copyIBAN(id) {
+      const iban = document.getElementById(id).textContent;
+      navigator.clipboard.writeText(iban).then(function () {
+        document.getElementById('copiat').style.display = 'block';
+        setTimeout(() => {
+          document.getElementById('copiat').style.display = 'none';
+        }, 2000);
+      }, function () {
+        alert("Nu s-a putut copia. Te rugăm copiază manual: " + iban);
+      });
+    }
+  </script>
+</body>
+</html>
