@@ -65,13 +65,11 @@
 <p><strong>Banca:</strong> INGB CENTRALA</p>
 <button class="btn-copy" onclick="copyIBAN('iban-usd')">📋 Copiază IBAN USD</button>
   <p><strong>Detalii plată:</strong> " Donație transplant "</p>
-
+    <p><strong>Adresa:</strong> Str. Orizontului, nr. 4, ap. 8, Sanpetru, Brașov, România</p>
     <p>#SalveazaViataLuiGabriel #DonatiiPentruGabriel #LuptaCuLeucemia #GabrielAreNevoieDeNoi #SansaLaViata</p>
-
-    <div id="copiat" class="copiat">✅ IBAN copiat!</div>
+ <div id="copiat" class="copiat">✅ IBAN copiat!</div>
   </div>
-
-  <script>
+ <script>
     function copyIBAN(id) {
       const iban = document.getElementById(id).textContent;
       navigator.clipboard.writeText(iban).then(function () {
